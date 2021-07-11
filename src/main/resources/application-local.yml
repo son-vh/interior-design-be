@@ -1,0 +1,19 @@
+environment:
+  type: local
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57Dialect
+        format_sql: true
+    generate-ddl: true
+    show-sql: false
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/interior-design?useSSL=false&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
